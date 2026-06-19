@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Rix",
+    "slug": "rix",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "rix",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "icon": "./assets/icon.png",
+    "splash": {
+      "backgroundColor": "#FFFBF5"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rix.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Rix uses the microphone so you can speak instead of type.",
+        "NSSpeechRecognitionUsageDescription": "Rix converts your speech to text so it can act on what you say."
+      }
+    },
+    "android": {
+      "package": "com.rix.app",
+      "permissions": ["RECORD_AUDIO"]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Rix uses the microphone so you can speak instead of type."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
