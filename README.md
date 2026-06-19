@@ -9,6 +9,9 @@ This repo is **front end only**. It knows nothing about how output is produced
 (agent reasoning, LLM calls, browser automation) — that's the teammate's Swift
 side. The two sides meet at one shared JSON file (see [Storage contract](#storage-contract)).
 
+**Built on Expo SDK 54** — runs in the standard **Expo Go** app (runtime
+`exposdk:54.0.0`). Make sure your Expo Go install supports SDK 54.
+
 ## Quick start (Windows, no Mac needed)
 
 ```bash
